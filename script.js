@@ -81,13 +81,25 @@ let homeScore = parseInt(prompt(`How many points did the ${homeTeam} score?`));
 let visitorScore = parseInt(prompt(`How many points did the ${visitors} score?`));
 
 if(homeScore > visitorScore){
-    alert(`Looks like the ${homeTeam} have defeated the ${visitors}!`)
+    alert(`Looks like the ${homeTeam} have defeated the ${visitors}!
+
+    Final Score:
+    Home/${homeTeam}: ${homeScore}
+    Visitor/${visitors}: ${visitorScore}`)
 } else if(homeScore < visitorScore){
-    alert(`Looks like the ${visitors} have defeated the ${homeTeam}!`)
+    alert(`Looks like the ${visitors} have defeated the ${homeTeam}!
+
+    Final Score:
+    Home/${homeTeam}: ${homeScore}
+    Visitor/${visitors}: ${visitorScore}`)
 } else if(homeScore==visitorScore){
-    alert(`Looks like the ${homeTeam} and the ${visitors} have tied!`)
+    alert(`Looks like the ${homeTeam} and the ${visitors} have tied!
+
+    Final Score:
+    Home/${homeTeam}: ${homeScore}
+    Visitor/${visitors}: ${visitorScore} `)
 }
 console.log(`
 Final Score:
-${homeTeam}: ${homeScore}
-${visitors}: ${visitorScore}`)
+Home/${homeTeam}: ${homeScore}
+Visitor/${visitors}: ${visitorScore}`)
