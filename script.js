@@ -77,15 +77,15 @@
 
 let homeTeam = prompt("What is the name of your home team?");
 let visitors = prompt("What is the name of the visiting team?");
-let homeScore = prompt(`How many points did the ${homeTeam} score?`);
-let visitorScore = prompt(`How many points did the ${visitors} score?`);
+let homeScore = parseInt(prompt(`How many points did the ${homeTeam} score?`));
+let visitorScore = parseInt(prompt(`How many points did the ${visitors} score?`));
 
 if(homeScore > visitorScore){
-    alert(`Looks like ${homeTeam} have defeated ${visitors}!`)
+    alert(`Looks like the ${homeTeam} have defeated the ${visitors}!`)
 } else if(homeScore < visitorScore){
-    alert(`Looks like ${visitors} have defeated ${homeTeam}!`)
+    alert(`Looks like the ${visitors} have defeated the ${homeTeam}!`)
 } else if(homeScore==visitorScore){
-    alert(`Looks like ${homeTeam} and ${visitors} have tied!`)
+    alert(`Looks like the ${homeTeam} and the ${visitors} have tied!`)
 }
 console.log(`
 Final Score:
