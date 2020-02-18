@@ -56,7 +56,6 @@
 
 // ### Exercise 3:
 
-// Combine multiple development concepts to create a basketball scoring program that meets the following requirements:
 // - Prompts the user for the name of their Home team
 // - Prompts the user for the name of the Visiting team
 // - Prompt the user to enter the score for their home team *(include the team name when prompting the user)*
@@ -75,3 +74,20 @@
 // Home/Memphis Grizzlies: 102
 // Visitors/GS Warriors: 23
 // ```
+
+let homeTeam = prompt("What is the name of your home team?");
+let visitors = prompt("What is the name of the visiting team?");
+let homeScore = prompt(`How many points did the ${homeTeam} score?`);
+let visitorScore = prompt(`How many points did the ${visitors} score?`);
+
+if(homeScore > visitorScore){
+    alert(`Looks like ${homeTeam} have defeated ${visitors}!`)
+} else if(homeScore < visitorScore){
+    alert(`Looks like ${visitors} have defeated ${homeTeam}!`)
+} else if(homeScore==visitorScore){
+    alert(`Looks like ${homeTeam} and ${visitors} have tied!`)
+}
+console.log(`
+Final Score:
+${homeTeam}: ${homeScore}
+${visitors}: ${visitorScore}`)
